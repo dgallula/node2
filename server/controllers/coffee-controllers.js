@@ -4,7 +4,7 @@ import generalSettings from "../config.js";
 
 const router = express.Router();
 
-router.get(`${generalSettings.baseUrl}/coffe`, (req, res) => {
+router.get(`${generalSettings.baseUrl}/coffee`, (req, res) => {
   try {
     const result = coffeeBl.getAllCoffeeData();
     res.send(result);
